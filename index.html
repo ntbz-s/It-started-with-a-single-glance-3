@@ -250,18 +250,44 @@ margin:25px 0;
 }
 
 
-/* floating petals */
-
-.petal{
+.heart{
 
 position:fixed;
 
 top:-20px;
 
-font-size:25px;
+font-size:30px;
 
-animation:fall 10s linear infinite;
+color:#e8a9b8;
 
+animation:heartFall 8s linear infinite;
+
+opacity:.8;
+
+}
+
+
+@keyframes heartFall{
+
+0%{
+
+transform:translateY(-10vh) rotate(0deg) scale(1);
+
+}
+
+50%{
+
+transform:translateY(50vh) rotate(180deg) scale(1.2);
+
+}
+
+100%{
+
+transform:translateY(110vh) rotate(360deg) scale(1);
+
+}
+
+}
 }
 
 
@@ -284,14 +310,11 @@ transform:translateY(110vh) rotate(360deg);
 <body>
 
 
-<div class="petal" style="left:15%">🌹</div>
+<div class="heart" style="left:15%;animation-delay:0s">❤️</div>
 
-<div class="petal" style="left:45%">🌸</div>
+<div class="heart" style="left:45%;animation-delay:2s">💗</div>
 
-<div class="petal" style="left:75%">🌹</div>
-
-
-
+<div class="heart" style="left:75%;animation-delay:4s">🤍</div>
 <div class="container">
 
 
