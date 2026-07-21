@@ -8,123 +8,192 @@
 
 <style>
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Great+Vibes&family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Great+Vibes&family=Parisienne&family=Playfair+Display:wght@400;500;600&display=swap');
+
 
 * {
     box-sizing: border-box;
 }
 
+
 body {
-    margin: 0;
+
+    margin:0;
+
     background:
-        radial-gradient(circle at top, #27345f 0%, #111936 45%, #070b1d 100%);
-    color: #f8ead1;
-    font-family: 'Cormorant Garamond', serif;
-    overflow-x: hidden;
+    radial-gradient(circle at top,#27345f 0%,#111936 45%,#070b1d 100%);
+
+    color:#f8ead1;
+
+    font-family:'Playfair Display',serif;
+
+    overflow-x:hidden;
+
 }
+
 
 
 /* Stars */
 
 .star {
-    position: fixed;
-    color: #f7d98b;
-    font-size: 20px;
-    animation: twinkle 4s infinite;
-    opacity: 0.8;
+
+    position:fixed;
+
+    color:#f7d98b;
+
+    font-size:14px;
+
+    animation:twinkle 4s infinite;
+
+    opacity:0.8;
+
 }
+
 
 @keyframes twinkle {
+
     0%,100% {
-        opacity: 0.2;
-        transform: scale(0.8);
+        opacity:0.2;
+        transform:scale(.8);
     }
+
     50% {
-        opacity: 1;
-        transform: scale(1.3);
+        opacity:1;
+        transform:scale(1.3);
     }
+
 }
 
 
-/* Hearts */
+
+/* Floating hearts */
 
 .heart {
-    position: fixed;
-    color: #e8a9b8;
-    font-size: 22px;
-    animation: float 8s infinite;
-    opacity: 0.5;
+
+    position:fixed;
+
+    color:#e8a9b8;
+
+    font-size:22px;
+
+    animation:float 8s infinite;
+
+    opacity:.5;
+
 }
 
+
 @keyframes float {
+
     from {
-        transform: translateY(100vh);
-        opacity: 0;
+        transform:translateY(100vh);
+        opacity:0;
     }
+
     30% {
-        opacity: 0.8;
+        opacity:.8;
     }
+
     to {
-        transform: translateY(-20vh);
-        opacity: 0;
+        transform:translateY(-20vh);
+        opacity:0;
     }
+
 }
+
 
 
 .container {
-    max-width: 900px;
-    margin: auto;
-    padding: 30px 25px;
-    text-align: center;
+
+    max-width:900px;
+
+    margin:auto;
+
+    padding:30px 25px;
+
+    text-align:center;
+
 }
+
 
 
 h1 {
-    margin-top: 80px;
-    font-family: 'Great Vibes', cursive;
-    font-size: 85px;
-    color: #f4d58d;
-    font-weight: normal;
+
+    margin-top:80px;
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:95px;
+
+    color:#f4d58d;
+
+    font-weight:normal;
+
+    letter-spacing:3px;
+
+    text-shadow:
+    0 0 20px rgba(244,213,141,.5);
+
 }
+
 
 
 .subtitle {
-    font-size: 30px;
-    line-height: 1.7;
-    color: #fff4dd;
+
+    font-family:'Parisienne',cursive;
+
+    font-size:38px;
+
+    line-height:1.8;
+
+    color:#fff4dd;
+
 }
+
 
 
 button {
 
-    margin-top: 45px;
-    padding: 16px 45px;
+    margin-top:45px;
+
+    padding:16px 45px;
 
     background:
     linear-gradient(135deg,#d7ad62,#b98538);
 
-    border: none;
-    border-radius: 50px;
+    border:none;
+
+    border-radius:50px;
 
     color:white;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 24px;
+
+    font-family:'Playfair Display',serif;
+
+    font-size:24px;
 
     cursor:pointer;
 
     box-shadow:
-    0 0 25px rgba(240,200,120,0.4);
+    0 0 25px rgba(240,200,120,.4);
+
 }
+
 
 
 button:hover {
-    transform: scale(1.05);
+
+    transform:scale(1.05);
+
 }
+
 
 
 .hidden {
+
     display:none;
+
 }
+
 
 
 .section {
@@ -132,7 +201,7 @@ button:hover {
     margin-top:100px;
 
     background:
-    rgba(255,248,235,0.96);
+    rgba(255,248,235,.96);
 
     color:#513b32;
 
@@ -141,63 +210,167 @@ button:hover {
     border-radius:30px;
 
     box-shadow:
-    0 20px 50px rgba(0,0,0,0.35);
+    0 20px 50px rgba(0,0,0,.35);
 
 }
 
 
+
+
 h2 {
 
-    font-family:'Great Vibes', cursive;
-    font-size:60px;
+    font-family:'Allura',cursive;
+
+    font-size:75px;
+
     color:#b88746;
+
     font-weight:normal;
 
 }
 
 
+
+
 .timeline {
 
     font-size:24px;
+
     line-height:1.8;
 
 }
 
 
+
 .date {
 
+    font-family:'Parisienne',cursive;
+
     color:#b88746;
-    font-size:30px;
-    font-weight:bold;
+
+    font-size:42px;
+
+    font-weight:normal;
 
 }
+
+
+
+
+/* DREAMY LETTER SECTION ONLY */
+
+.letter-section {
+
+
+    background:
+
+    radial-gradient(circle at 15% 20%,
+    rgba(255,220,150,.18),
+    transparent 25%),
+
+    radial-gradient(circle at 85% 15%,
+    rgba(220,170,255,.18),
+    transparent 30%),
+
+    radial-gradient(circle at 50% 80%,
+    rgba(255,190,220,.12),
+    transparent 35%),
+
+
+    linear-gradient(
+    160deg,
+    #28366b,
+    #101735 55%,
+    #070b20
+    );
+
+
+    color:#fff4dd;
+
+
+    border:1px solid rgba(247,217,139,.35);
+
+
+    box-shadow:
+
+    0 25px 60px rgba(0,0,0,.5),
+
+    0 0 40px rgba(247,217,139,.18);
+
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+
+.letter-section::before {
+
+
+    content:"✦   ✧   ✦   ✧   ✦";
+
+
+    display:block;
+
+    text-align:center;
+
+    color:#f7d98b;
+
+    font-size:20px;
+
+    letter-spacing:15px;
+
+    opacity:.75;
+
+    margin-bottom:20px;
+
+}
+
 
 
 .letter {
 
+
     text-align:left;
 
-    font-family:'Cormorant Garamond',serif;
 
-    font-size:25px;
+    font-family:'Playfair Display',serif;
 
-    line-height:1.9;
+
+    font-size:27px;
+
+
+    line-height:2;
+
+
+    color:#fff2d8;
+
+
+    letter-spacing:.7px;
 
 }
+
+
 
 
 .final {
 
     background:transparent;
+
     color:#f5d993;
 
     font-family:'Great Vibes',cursive;
 
-    font-size:60px;
+    font-size:75px;
+
+    line-height:1.4;
 
     box-shadow:none;
 
 }
+
 
 
 .envelope {
@@ -211,19 +384,22 @@ h2 {
 }
 
 
+
 @keyframes pulse {
 
     50% {
+
         transform:scale(1.1);
+
     }
 
 }
 
 
+
 </style>
 
 </head>
-
 <body>
 
 
@@ -235,6 +411,7 @@ h2 {
 
 <div class="heart" style="left:20%;animation-delay:1s">♥</div>
 <div class="heart" style="left:75%;animation-delay:3s">♥</div>
+
 
 
 <div class="container">
@@ -259,28 +436,39 @@ Ours began with a glance.
 </div>
 
 
+
 <button onclick="openLetter()">
+
 A Letter For You 🤍
+
 </button>
+
+
 
 
 <div id="story" class="hidden">
 
 
+
 <div class="section">
+
 
 <h2>
 Our Story
 </h2>
 
 
+
 <div class="timeline">
 
 
+
 <p>
+
 <span class="date">
 July 18th
 </span>
+
 <br>
 
 At your sister's sanchak, I saw you for just a brief moment.
@@ -290,10 +478,13 @@ I never knew that a single glance would become the beginning of my forever.
 </p>
 
 
+
 <p>
+
 <span class="date">
 December 28th
 </span>
+
 <br>
 
 The day we got engaged, and our journey towards forever truly began.
@@ -301,10 +492,14 @@ The day we got engaged, and our journey towards forever truly began.
 </p>
 
 
+
+
 <p>
+
 <span class="date">
 January 1st, 7:30 AM
 </span>
+
 <br>
 
 A simple Happy New Year message from you became the first little chapter of our story.
@@ -312,10 +507,14 @@ A simple Happy New Year message from you became the first little chapter of our 
 </p>
 
 
+
+
 <p>
+
 <span class="date">
 This July
 </span>
+
 <br>
 
 The moment we finally confessed the love that had quietly grown between us.
@@ -323,10 +522,14 @@ The moment we finally confessed the love that had quietly grown between us.
 </p>
 
 
+
+
 <p>
+
 <span class="date">
 December 24th, Inshallah
 </span>
+
 <br>
 
 The day we will say "Qubool Hai" and choose each other forever.
@@ -334,14 +537,25 @@ The day we will say "Qubool Hai" and choose each other forever.
 </p>
 
 
+
 </div>
 
 </div>
-    <div class="section">
+
+
+
+
+
+<!-- DREAMY LETTER SECTION -->
+
+<div class="section letter-section">
+
 
 <h2>
 My Letter To You
 </h2>
+
+
 
 
 <div class="letter">
@@ -352,9 +566,11 @@ My Love,
 </p>
 
 
+
 <p>
 A year ago, at your sister's wedding, I saw you for the first time. At that moment, you were just someone I noticed for a brief second. I never imagined that one day I would be writing a letter to the man I was going to marry.
 </p>
+
 
 
 <p>
@@ -362,14 +578,17 @@ Our parents may have brought us together with marriage in mind, but somewhere be
 </p>
 
 
+
 <p>
 I slowly fell in love with you.
 </p>
 
 
+
 <p>
-It wasn't all at once. It happened in little moments — in the way you listened to me, the way you remembered the smallest things I said, and the comfort I felt knowing I could always be myself with you.
+It wasn't all at once. It happened in little moments , in the way you listened to me, the way you remembered the smallest things I said, and the comfort I felt knowing I could always be myself with you.
 </p>
+
 
 
 <p>
@@ -377,9 +596,11 @@ I started looking forward to your messages. I started smiling at my phone. I sta
 </p>
 
 
+
 <p>
 Love did not arrive with fireworks.
 </p>
+
 
 
 <p>
@@ -387,9 +608,11 @@ It arrived quietly.
 </p>
 
 
+
 <p>
 Like sunlight slowly filling a room.
 </p>
+
 
 
 <p>
@@ -397,9 +620,11 @@ You became my safe place. The person I could share my happiness with, my fears w
 </p>
 
 
+
 <p>
-As December comes closer, everyone talks about the wedding day — the celebrations, the photographs, the memories we will create.
+As December comes closer, everyone talks about the wedding day and  the celebrations, the photographs, the memories we will create.
 </p>
+
 
 
 <p>
@@ -407,9 +632,11 @@ But when I think about marrying you, I don't only think about one day.
 </p>
 
 
+
 <p>
 I think about all the days after.
 </p>
+
 
 
 <p>
@@ -417,14 +644,17 @@ I think about growing older with you, laughing with you, supporting you, and hol
 </p>
 
 
+
 <p>
 I am trusting you with my heart, my dreams, my fears, and my life.
 </p>
 
 
+
 <p>
-That trust is precious to me, and you earned it simply by being you.
+That trust is precious to me, and you earned it simply by being YOU.
 </p>
+
 
 
 <p>
@@ -432,9 +662,11 @@ Thank you for being patient with me, for making me laugh, for listening to my en
 </p>
 
 
+
 <p>
 One year ago, we were strangers.
 </p>
+
 
 
 <p>
@@ -442,14 +674,17 @@ Today, you are my best friend, my safe place, and the person I cannot imagine my
 </p>
 
 
+
 <p>
 Inshallah, on December 24th, when we say "Qubool Hai," I will make the most beautiful promise of my life.
 </p>
 
 
+
 <p>
-I promise to choose you — on our happiest days, on our difficult days, and on all the ordinary days in between.
+I promise to choose you baby, on our happiest days, on our difficult days, and on all the ordinary days in between.
 </p>
+
 
 
 <p>
@@ -457,65 +692,94 @@ Because the best thing that ever happened to me was not just falling in love.
 </p>
 
 
+
 <p>
 It was falling in love with you.
 </p>
 
 
+
 <p>
+
 Forever yours,
+
 <br>
+
 Your soon-to-be wife 🤍
+
 </p>
 
 
-</div>
 
 </div>
+
+
+</div>
+
+
+
+
+
 
 
 <div class="section final">
 
-One year ago, I saw you.
+
+I didn't know that a single moment could change my life.
+
 <br><br>
 
-Today, I love you.
+I didn't know that a stranger could become so important.
+
 <br><br>
 
-And Inshallah, forever begins with you.
+But Allah had written a beautiful story for us.
+
+<br><br>
+
+And I cannot wait to begin forever with you. 🤍
+
+
+</div>
+
+
+
 
 </div>
 
 
 </div>
+
+
+
+
 
 
 <script>
 
+
 function openLetter(){
+
 
 document.getElementById("story").classList.remove("hidden");
 
+
 window.scrollTo({
 
-top: window.innerHeight,
+top:window.innerHeight,
 
 behavior:"smooth"
 
 });
 
+
 }
 
+
 </script>
+
 
 
 </body>
 
 </html>
-
-
-
-
-
-
-
