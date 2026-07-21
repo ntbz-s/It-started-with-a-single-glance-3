@@ -1,59 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>To My Love 🤍</title>
-    .petal {
 
-    position:fixed;
-
-    top:-10vh;
-
-    color:#d98b9c;
-
-    font-size:25px;
-
-    animation:petalFall 10s linear infinite;
-
-    opacity:.7;
-
-}
-
-
-@keyframes petalFall {
-
-    0% {
-
-        transform:
-        translateY(-10vh)
-        rotate(0deg);
-
-    }
-
-
-    100% {
-
-        transform:
-        translateY(120vh)
-        rotate(360deg);
-
-    }
-
-}
+<link href="https://fonts.googleapis.com/css2?family=Allura&family=Great+Vibes&family=Parisienne&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
 
 <style>
 
-@import url('https://fonts.googleapis.com/css2?family=Allura&family=Great+Vibes&family=Parisienne&family=Playfair+Display:wght@400;500;600&display=swap');
-
-
-* {
-    box-sizing: border-box;
+*{
+    box-sizing:border-box;
 }
 
-
-body {
+body{
 
     margin:0;
 
@@ -65,20 +28,47 @@ body {
     font-family:'Playfair Display',serif;
 
     overflow-x:hidden;
-    
-    <div class="petal" style="left:15%;animation-delay:1s">🌹</div>
-
-    <div class="petal" style="left:45%;animation-delay:4s">🌸</div>
-
-    <div class="petal" style="left:75%;animation-delay:7s">🌹</div>
 
 }
 
 
+/* Floating petals */
+
+.petal{
+
+    position:fixed;
+
+    top:-10vh;
+
+    font-size:25px;
+
+    animation:petalFall 10s linear infinite;
+
+    opacity:.7;
+
+}
+
+
+@keyframes petalFall{
+
+    from{
+
+        transform:translateY(-10vh) rotate(0deg);
+
+    }
+
+    to{
+
+        transform:translateY(120vh) rotate(360deg);
+
+    }
+
+}
+
 
 /* Stars */
 
-.star {
+.star{
 
     position:fixed;
 
@@ -88,30 +78,25 @@ body {
 
     animation:twinkle 4s infinite;
 
-    opacity:0.8;
-
 }
 
 
-@keyframes twinkle {
+@keyframes twinkle{
 
-    0%,100% {
-        opacity:0.2;
-        transform:scale(.8);
-    }
+    50%{
 
-    50% {
         opacity:1;
+
         transform:scale(1.3);
+
     }
 
 }
 
 
+/* Hearts */
 
-/* Floating hearts */
-
-.heart {
+.heart{
 
     position:fixed;
 
@@ -126,27 +111,26 @@ body {
 }
 
 
-@keyframes float {
+@keyframes float{
 
-    from {
+    from{
+
         transform:translateY(100vh);
-        opacity:0;
+
     }
 
-    30% {
-        opacity:.8;
-    }
+    to{
 
-    to {
         transform:translateY(-20vh);
+
         opacity:0;
+
     }
 
 }
 
 
-
-.container {
+.container{
 
     max-width:900px;
 
@@ -159,8 +143,7 @@ body {
 }
 
 
-
-h1 {
+h1{
 
     margin-top:80px;
 
@@ -174,14 +157,10 @@ h1 {
 
     letter-spacing:3px;
 
-    text-shadow:
-    0 0 20px rgba(244,213,141,.5);
-
 }
 
 
-
-.subtitle {
+.subtitle{
 
     font-family:'Parisienne',cursive;
 
@@ -194,15 +173,13 @@ h1 {
 }
 
 
-
-button {
+button{
 
     margin-top:45px;
 
     padding:16px 45px;
 
-    background:
-    linear-gradient(135deg,#d7ad62,#b98538);
+    background:linear-gradient(135deg,#d7ad62,#b98538);
 
     border:none;
 
@@ -212,113 +189,77 @@ button {
 
     font-family:'Playfair Display',serif;
 
-    font-size:24px;
+    font-size:22px;
 
     cursor:pointer;
 
-    box-shadow:
-    0 0 25px rgba(240,200,120,.4);
+    box-shadow:0 0 25px rgba(240,200,120,.4);
 
 }
 
 
-
-button:hover {
+button:hover{
 
     transform:scale(1.05);
 
 }
 
 
-
-.hidden {
+.hidden{
 
     display:none;
 
 }
 
 
-
-.section {
+.section{
 
     margin-top:100px;
-
-    background:
-    rgba(255,248,235,.96);
-
-    color:#513b32;
 
     padding:55px 45px;
 
     border-radius:30px;
 
-    box-shadow:
-    0 20px 50px rgba(0,0,0,.35);
+    box-shadow:0 20px 50px rgba(0,0,0,.35);
 
 }
 
 
 
+/* Envelope */
 
-h2 {
+.envelope{
 
-    font-family:'Allura',cursive;
+    font-size:90px;
 
-    font-size:55px;
+    margin-top:40px;
 
-    color:#b88746;
+    animation:pulse 2s infinite;
 
-    font-weight:normal;
+}
+
+
+@keyframes pulse{
+
+    50%{
+
+        transform:scale(1.1);
+
+    }
 
 }
 
 
 
+/* Letter */
 
-.timeline {
-
-    font-size:24px;
-
-    line-height:1.8;
-
-}
-
-
-
-.date {
-
-    font-family:'Parisienne',cursive;
-
-    color:#b88746;
-
-    font-size:32px;
-
-    font-weight:normal;
-
-}
-
-
-
-
-/* DREAMY LETTER SECTION ONLY */
-
-.letter-section {
-
+.letter-section{
 
     background:
 
     radial-gradient(circle at 15% 20%,
     rgba(255,220,150,.18),
     transparent 25%),
-
-    radial-gradient(circle at 85% 15%,
-    rgba(220,170,255,.18),
-    transparent 30%),
-
-    radial-gradient(circle at 50% 80%,
-    rgba(255,190,220,.12),
-    transparent 35%),
-
 
     linear-gradient(
     160deg,
@@ -330,30 +271,15 @@ h2 {
 
     color:#fff4dd;
 
-
     border:1px solid rgba(247,217,139,.35);
-
-
-    box-shadow:
-
-    0 25px 60px rgba(0,0,0,.5),
-
-    0 0 40px rgba(247,217,139,.18);
-
-
-    position:relative;
-
-    overflow:hidden;
 
 }
 
 
 
-.letter-section::before {
-
+.letter-section::before{
 
     content:"✦   ✧   ✦   ✧   ✦";
-
 
     display:block;
 
@@ -365,40 +291,50 @@ h2 {
 
     letter-spacing:15px;
 
-    opacity:.75;
-
     margin-bottom:20px;
 
 }
 
 
+h2{
 
-.letter {
+    font-family:'Allura',cursive;
 
+    font-size:55px;
+
+    color:#f7d98b;
+
+    font-weight:normal;
+
+}
+
+
+.letter{
 
     text-align:left;
 
-
     font-family:'Playfair Display',serif;
 
+    font-size:16px;
 
-    font-size:20px;
-
-
-    line-height:1.9;
-
+    line-height:2;
 
     color:#fff2d8;
 
+    letter-spacing:.3px;
 
-    letter-spacing:.5px;
+}
+
+
+.letter p{
+
+    margin-bottom:28px;
 
 }
 
 
 
-
-.final {
+.final{
 
     background:transparent;
 
@@ -415,41 +351,22 @@ h2 {
 }
 
 
-
-.envelope {
-
-    font-size:90px;
-
-    margin-top:40px;
-
-    animation:pulse 2s infinite;
-
-}
-
-
-
-@keyframes pulse {
-
-    50% {
-
-        transform:scale(1.1);
-
-    }
-
-}
-
-
-
 </style>
 
 </head>
+
+
 <body>
+
+
+<div class="petal" style="left:15%;animation-delay:1s">🌹</div>
+<div class="petal" style="left:45%;animation-delay:4s">🌸</div>
+<div class="petal" style="left:75%;animation-delay:7s">🌹</div>
 
 
 <div class="star" style="left:10%;top:20%">✦</div>
 <div class="star" style="left:50%;top:10%">✧</div>
 <div class="star" style="left:80%;top:30%">✦</div>
-<div class="star" style="left:30%;top:60%">✧</div>
 
 
 <div class="heart" style="left:20%;animation-delay:1s">♥</div>
@@ -479,7 +396,6 @@ Ours began with a glance.
 </div>
 
 
-
 <button onclick="openLetter()">
 
 A Letter For You 🤍
@@ -487,26 +403,8 @@ A Letter For You 🤍
 </button>
 
 
-
-
 <div id="story" class="hidden">
 
-
-
-<div class="section">
-
-
-
-
-</div>
-
-</div>
-
-
-
-
-
-<!-- DREAMY LETTER SECTION -->
 
 <div class="section letter-section">
 
@@ -516,21 +414,15 @@ My Letter To You
 </h2>
 
 
-
-
 <div class="letter">
-
-
-<p>
+    <p>
 My Love,
 </p>
 
 
-
 <p>
-A year ago, at Didi's sanchak , I saw you for the first time. In that moment, you were just someone I noticed for a brief insignificant second. Never imagined that one day I would be writing a rather romantic letter to that very boy.
+A year ago, at Didi's sanchak, I saw you for the first time. In that moment, you were just someone I noticed for a brief insignificant second. Never imagined that one day I would be writing a rather romantic letter to that very boy.
 </p>
-
 
 
 <p>
@@ -538,17 +430,14 @@ Our parents may have brought us together with marriage in mind, but somewhere be
 </p>
 
 
-
 <p>
 I slowly fell in love with you.
 </p>
 
 
-
 <p>
-It wasn't all at once. It happened in little moments , in the way you listened to me, the way you remembered the smallest things I said, and the comfort I felt knowing I could always be myself with you.
+It wasn't all at once. It happened in little moments, in the way you listened to me, the way you remembered the smallest things I said, and the comfort I felt knowing I could always be myself with you.
 </p>
-
 
 
 <p>
@@ -556,17 +445,14 @@ I started looking forward to your messages. I started smiling at my phone. I sta
 </p>
 
 
-
 <p>
-You became my favourite part of the day. The person I could flirt with, share my happiness , my fears , and all the little thoughts in between with.
+You became my favourite part of the day. The person I could flirt with, share my happiness, my fears, and all the little thoughts in between with.
 </p>
 
 
-
 <p>
-As December comes closer, everyone talks about the wedding day and  the celebrations, the guests, the fun we're gonna have.
+As December comes closer, everyone talks about the wedding day, the celebrations, the guests, and the fun we're going to have.
 </p>
-
 
 
 <p>
@@ -574,23 +460,19 @@ But when I think about marrying you, I don't only think about one day.
 </p>
 
 
-
 <p>
 I think about all the days after.
 </p>
 
 
-
 <p>
-I think about growing older with you, laughing with you,crying with you, supporting you, and holding your hand through every chapter life brings us.
+I think about growing older with you, laughing with you, crying with you, supporting you, and holding your hand through every chapter life brings us.
 </p>
-
 
 
 <p>
 I am trusting you with my heart, my dreams, my fears, and my life.
 </p>
-
 
 
 <p>
@@ -603,11 +485,9 @@ One year ago, you were just a boy in the crowd.
 </p>
 
 
-
 <p>
 Today, you are my best friend, my safe place, and the person I cannot imagine my future without.
 </p>
-
 
 
 <p>
@@ -615,39 +495,30 @@ Inshallah, on December 24th, when we say "Qubool Hai," I will make the most beau
 </p>
 
 
-
 <p>
 I promise to choose you baby, on our happiest days, on our difficult days, and on all the ordinary days in between.
 </p>
 
 
-
 <p>
-I love you,meri jaan.
+I love you, meri jaan.
 </p>
 
 
-
 <p>
-
 Forever yours,
-
 <br>
-
 Sadiya 🤍
-
 </p>
 
 
-
 </div>
 
 
 </div>
 
 
-
-
+</div>
 
 
 
@@ -655,7 +526,6 @@ Sadiya 🤍
 
 
 I didn't know that a single moment could change my life.
-
 
 <br><br>
 
@@ -669,41 +539,24 @@ And I can't wait to begin my forever with you. 🤍
 </div>
 
 
-
-
 </div>
-
-
-</div>
-
-
-
-
 
 
 <script>
 
-
 function openLetter(){
 
+    document.getElementById("story").classList.remove("hidden");
 
-document.getElementById("story").classList.remove("hidden");
+    document.getElementById("story").scrollIntoView({
 
+        behavior:"smooth"
 
-window.scrollTo({
-
-top:window.innerHeight,
-
-behavior:"smooth"
-
-});
-
+    });
 
 }
 
-
 </script>
-
 
 
 </body>
